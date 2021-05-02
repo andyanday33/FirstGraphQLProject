@@ -7,7 +7,7 @@ const app = express();
 const PORT = 4000
 
 //connect to mongodb database
-mongoose.connect('mongodb+srv://anday:gohome33@nodetuts.x2wgp.mongodb.net/graphql-tuts?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://<u>:<pw>@nodetuts.x2wgp.mongodb.net/<cluster>?retryWrites=true&w=majority', 
 {useUnifiedTopology: true, useNewUrlParser: true})
     .then((result) => app.listen(PORT, () => {
         console.log(`now listening for requests on port ${ PORT }`)
